@@ -1,0 +1,486 @@
+body{
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    margin: 0%;
+    background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url('tu-imagen-de-fondo.jpg');
+    background-size: cover;
+    color: #fff;
+}
+
+
+h1{
+
+}
+
+
+h2 {
+    color: #ffb12c;
+}
+ 
+p{
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    color: #fff;
+}
+
+
+
+:root{
+--color-acento: #ee6130;
+--color-acento-claro: #ee613033;
+--color-texto: black;
+}
+
+a{
+    text-decoration: none;
+    color: var(--color-texto);
+
+}
+
+
+#logo{
+    height: 40px;
+}
+
+header nav img {
+    height: 25px;
+}
+
+h2{
+    text-align: center;
+    font-family: system-ui, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+
+
+
+/*Banner styles*/
+
+.banner{
+    background-size: cover;
+    background-position: center;
+    height: 60vh;
+    background-image: linear-gradient(rgba(0,0,0,0.4), rgba( 0,0,0,0.4)),
+    url(img/portada\ agus.png);
+}
+
+.banner-container{
+    text-align: center;
+    padding: 15% 0;
+}
+
+.banner h1 {
+    margin: 0;
+    color: white;
+    text-shadow: 1px 1px 3px rgba( 0,0,0,0.2);
+    font-size: 62px;
+    font-weight: bold;
+}
+
+.banner p {
+    font-size: 30px;
+    color: white;
+    opacity:0.7 ;
+    text-shadow: 1px 1px 3px rgba( 0,0,0,0.2);
+}
+
+
+img{
+    max-width: 100%;
+}
+
+
+.section {
+    font-family: Arial, sans-serif; /* Tipo de letra para todo el texto */
+    line-height: 1.5; /* Espaciado entre líneas */
+   
+}
+main {
+    padding: 10px; /* Reducir el padding del contenido principal */
+}
+
+
+#productos-container {
+    margin: 50px auto; /* Ajusta la distancia del margen superior e inferior */
+    max-width: 800px; /* Limita el ancho del contenedor */
+    text-align: justify; /* Justifica el texto dentro del contenedor */
+}
+
+p {
+    margin: 0; /* Elimina el margen entre párrafos */
+}
+
+.pastillas {
+    display: flex;
+    justify-content: center; /* Centra las pastillas horizontalmente */
+    gap: 20px; /* Espacio entre las pastillas */
+}
+
+.pastilla {
+    display: flex;
+    flex-direction: column;
+    align-items: center; /* Centra los elementos horizontalmente dentro de la pastilla */
+    text-align: center; /* Centra el texto horizontalmente */
+}
+
+.pastilla img {
+    width: 100px;
+    height: 100px;
+}
+
+.pastilla p {
+    margin-top: 10px;
+    font-size: 14px;
+    color: #000;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+.gallery {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+
+.gallery-item {
+    position: relative;
+    overflow: hidden;
+    width: 200px; /* Tamaño deseado para todas las imágenes */
+    background-color: orange; /* Color de fondo del cuadrado */
+    padding: 10px; /* Espaciado dentro del cuadrado */
+    text-align: center; /* Centra el contenido horizontalmente */
+}
+
+.gallery-item img {
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+}
+
+.caption {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    background-color: rgba(0, 0, 0, 0.5); /* Fondo semi-transparente */
+    color: white;
+    padding: 10px;
+    box-sizing: border-box;
+    opacity: 0;
+    transition: opacity 0.3s ease;
+}
+
+.gallery-item:hover .caption {
+    opacity: 1; /* Mostrar la descripción al hacer hover */
+}
+
+.caption h2,
+.caption p {
+    margin: 5px 0; /* Espaciado entre el título y la descripción */
+}
+
+.reseñas {
+    margin-top: 50px;
+}
+
+.reseña-item {
+    display: flex;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+.reseña-item img {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    margin-right: 10px;
+}
+
+.info-reseña p {
+    margin: 0;
+}
+
+.info-reseña strong {
+    font-weight: bold;
+}
+
+
+.reseña-item {
+    background-color: #55534e; /* gris */
+    padding: 10px;
+    margin-bottom: 20px;
+    border-radius: 10px;
+    transition: background-color 0.3s ease; /* Transición suave */
+}
+
+.reseña-item:hover {
+    background-color:orange; /* Cambia a un tono más claro al pasar el cursor */
+}
+
+.reseña-item img {
+    display: block;
+    max-width: 100%;
+    height: auto;
+    margin-bottom: 10px;
+    border-radius: 50%;
+}
+
+.info-reseña p {
+    margin: 0;
+}
+
+.info-reseña p:first-child {
+    margin-bottom: 10px;
+}
+
+
+
+/* Estilos para el formulario */
+.formulario-container {
+    background-color: #55534e;  /* Cambiar el color de fondo a gris claro */
+    padding: 20px;
+    max-width: 400px; /* Ajusta el ancho máximo del formulario */
+    margin: 0 auto; /* Centra el formulario horizontalmente */
+    margin-bottom: 20px; /* Agrega un margen inferior para separarlo del pie de página */
+    transition: background-color 0.3s ease; /* Transición suave */
+}
+
+/* Cambiar el color de fondo al pasar el cursor */
+.formulario-container:hover {
+    background-color: #FFA500; /* Cambiar a color naranja */
+}
+
+.formulario {
+    margin: 0; /* Elimina el margen del formulario para que se ajuste al contenedor */
+}
+
+.formulario h2 {
+    margin-bottom: 20px;
+    text-align: center;
+    color: #fff;
+}
+
+.input-group {
+    margin-bottom: 20px;
+}
+
+.input-group label {
+    display: block;
+    margin-bottom: 5px;
+    color: #000;
+}
+
+.input-group input,
+.input-group textarea {
+    width: 100%;
+    padding: 5px;
+    border: none;
+    border-radius: 5px;
+    background-color: #fff;
+}
+
+.input-group textarea {
+    resize: none;
+}
+
+button[type="submit"] {
+    width: 100%;
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    background-color: #000;
+    color: #fff;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+button[type="submit"]:hover {
+    background-color: #555;
+}
+/* Estilos específicos del footer */
+footer {
+    background-color: #333;
+    color: #fff;
+    padding: 20px;
+    text-align: center;
+}
+
+.redes-sociales {
+    margin-top: 20px;
+}
+
+.redes-sociales a {
+    color: #fff;
+    text-decoration: none;
+    margin: 0 10px;
+    font-size: 24px;
+}
+
+
+
+
+
+
+
+/* Estilos para dispositivos móviles con un ancho máximo de 480px */
+@media screen and (max-width: 480px) 
+
+{
+    header {
+        padding: 10px 0; /* Reducir el padding del encabezado */
+    }
+    .banner{
+        background-size: cover;
+        background-position: center;
+        height: 60vh;
+        background-image: linear-gradient(rgba(0,0,0,0.4), rgba( 0,0,0,0.4)),
+        url(img/hombremobile.png);
+    }
+    
+    h1{
+        margin-top: 50%;
+    }
+    header img {
+        width: 80px; /* Reducir el tamaño del logo */
+    }
+
+    .banner-container {
+        padding: 10px; /* Reducir el padding del banner */
+    }
+
+    main {
+        padding: 10px; /* Reducir el padding del contenido principal */
+    }
+
+    h2 {
+        font-size: 20px; /* Reducir el tamaño del texto de los encabezados */
+    }
+
+    p {
+        font-size: 16px; /* Reducir el tamaño del texto de los párrafos */
+    }
+
+    .pastillas {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .pastilla {
+        margin-bottom: 20px;
+        text-align: center;
+    }
+
+    .pastilla img {
+        width: 50px; /* Ajusta el tamaño de la imagen */
+        height: 50px;}
+
+        .gallery {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+
+        .gallery-item {
+            margin-bottom: 20px;
+            text-align: center;
+        }
+
+        .gallery-item img {
+            width: 100%; /* Ajusta el ancho de la imagen al 100% del contenedor */
+            height: auto; /* Altura automática para mantener la proporción */
+        }
+    
+
+    .reseña-item img {
+        width: 60px; /* Reducir el tamaño de las imágenes de las reseñas */
+    }
+
+    .formulario-container {
+        max-width: 90%; /* Ajustar el ancho máximo del contenedor del formulario */
+    }
+
+    .redes-sociales a {
+        margin: 0 3px; /* Ajustar el margen de los íconos de redes sociales */
+    }
+}
+
+
+
+
+/* Estilos para dispositivos con un ancho entre 481px y 768px */
+@media screen and (min-width: 481px) and (max-width: 768px) {
+    header {
+        padding: 15px 0; /* Ajustar el padding del encabezado */
+    }
+
+    header img {
+        width: 100px; /* Ajustar el tamaño del logo */
+    }
+
+    .banner-container {
+        padding: 15px; /* Ajustar el padding del banner */
+    }
+
+    main {
+        padding: 15px; /* Ajustar el padding del contenido principal */
+    }
+
+    h2 {
+        font-size: 24px; /* Ajustar el tamaño del texto de los encabezados */
+    }
+
+    p {
+        font-size: 18px; /* Ajustar el tamaño del texto de los párrafos */
+    }
+
+    .pastillas {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-around; /* Ajustar el diseño de las pastillas */
+    }
+
+    .pastilla {
+        width: 45%; /* Ajustar el ancho de las pastillas */
+    }
+
+    .gallery-item {
+        width: 45%; /* Ajustar el ancho de los elementos de la galería */
+    }
+
+    .reseña-item img {
+        width: 80px; /* Ajustar el tamaño de las imágenes de las reseñas */
+    }
+
+    .formulario-container {
+        max-width: 90%; /* Ajustar el ancho máximo del contenedor del formulario */
+    }
+
+    .redes-sociales a {
+        margin: 0 5px; /* Ajustar el margen de los íconos de redes sociales */
+    }
+} 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
